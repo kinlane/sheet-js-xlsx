@@ -1,0 +1,23 @@
+title : Public Private Sector
+
+safe: true
+lsi: false
+pygments: true
+auto: true
+
+source: sheet-js-xlsx
+destination: sheet-js-xlsx
+
+permalink: /:categories/:year/:month/:day/:title 
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+paginate: 1000
+paginate_path: "/blog/page:num"
+
+production_url : http://kinlane.github.io/sheet-js-xlsx/
+
+BASE_PATH : http://kinlane.github.io/sheet-js-xlsx/
+
+archive_path: /archive.html
+categories_path : /categories.html
+tags_path : /tags.html
