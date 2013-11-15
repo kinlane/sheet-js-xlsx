@@ -9,9 +9,6 @@
 	text-align:center;
 	font:20pt bold,"Vollkorn";color:#bbb
 }
-#b64data{
-	width:100%;
-}
 </style>
 <b>JS-XLSX</b><br />
 
@@ -23,9 +20,6 @@
 <input type="radio" name="format" value="form"> FORMULAE<br>
 
 <div id="drop">Drop an XLSX file here to see sheet data.</div>
-
-<textarea id="b64data">... or paste a base64-encoding here</textarea>
-<input type="button" id="dotext" value="Click here to process the base64 text" onclick="b64it();"/>
 
 <pre id="out"></pre>
 
@@ -80,12 +74,6 @@ function to_formulae(workbook) {
 		}
 	});
 	return result.join("\n");
-}
-
-var tarea = document.getElementById('b64data');
-function b64it() {
-	var wb = XLSX.read(tarea.value, {type: 'base64'});
-	process_wb(wb);
 }
 
 function process_wb(wb) {
