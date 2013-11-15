@@ -13,13 +13,15 @@
 	width:100%;
 }
 </style>
-<b>JS-XLSX Live Demo</b><br />
 
-<div id="drop">Drop an XLSX file here to see sheet data.</div>
+<b>JS-XLSX</b><br />
+
+<div id="drop">Drop an XLSX file here</div>
 
 <script src="jszip.js"></script>
 <script src="xlsx.js"></script>
 <script src="shim.js"></script>
+
 <script>
 function get_radio_value( radioName ) {
 	var radios = document.getElementsByName( radioName );
@@ -121,15 +123,4 @@ if(drop.addEventListener) {
 	drop.addEventListener('dragover', handleDragover, false);
 	drop.addEventListener('drop', handleDrop, false);
 }
-</script>
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-36810333-1']);
-	_gaq.push(['_trackPageview']);
-
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
 </script>
